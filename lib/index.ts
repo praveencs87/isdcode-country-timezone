@@ -1,47 +1,22 @@
-import countries from "./data/countries";
-import states from "./data/states";
+var fs = require('require');
 
-const compare = function (country: any, arg: string) {
-    arg = arg.toLowerCase();
-    return country.code.toLowerCase() == arg || country.name.toLowerCase() == arg || country.dial_code.toLowerCase() == arg
+function compare (dialcodes:any, arg:string) {
+    return  dialcodes[0] == arg
 };
 
-export function getCountries(): any {
-    return countries;
-}
+export function getCountries() {
+  let countries = require('./data/dialcodes.json');
+  return countries;
+};
 
-export function getCountry(arg: string): any {
-    let countries = getCountries();
+export function getTimezone (dialCode:any):any {
+  let dialcodes = require('./data/dialcodes.json');
 
-    for (let i = 0; i < countries.length; i++) {
-        if (compare(countries[i], arg)) {
-            return countries[i];
-        }
-    }
+  for (let i = 0; i < dialcodes.length; i++) {
+      if (compare(dialcodes[i], dialCode)) {
+          return dialcodes[i][2];
+      }
+  }
 
-    return null;
-}
-
-export function getFilteredCountries(args: any): any {
-    let countries = getCountries();
-    let filteredCountries = [];
-
-    for (let arg of args) {
-        for (let i = 0; i < countries.length; i++) {
-            if (compare(countries[i], arg)) {
-                filteredCountries.push(countries[i]);
-                break;
-            }
-        }
-    }
-
-    return filteredCountries;
-}
-
-export function getStates(countryCode: string): any {
-    try {
-        return states[countryCode];
-    } catch (error) {
-        return "Invalid country code";
-    }
-}
+  return null;
+};
