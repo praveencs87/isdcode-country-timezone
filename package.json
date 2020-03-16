@@ -1,0 +1,35 @@
+{
+  "name": "isdcode-country-timezone",
+  "version": "1.1.1",
+  "description": "NPM package to get the timezone from ISD/Dial code",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://github.com/praveencs87/isdcode-country-timezone.git"
+  },
+  "keywords": [
+    "country",
+    "Timezone",
+    "picker",
+    "ISD Code",
+    "place",
+    "dial code",
+    "phone code"
+  ],
+  "author": "Praveen",
+  "license": "MIT",
+  "bugs": {
+    "url": "http://github.com/praveencs87/isdcode-country-timezone/issues"
+  },
+  "homepage": "http://github.com/praveencs87/isdcode-country-timezone#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "typescript": "^3.5.3"
+  }
+}
