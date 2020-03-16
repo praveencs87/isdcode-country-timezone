@@ -9,29 +9,14 @@ This function will return the array of all the countries with ISD/dial code and 
 ```javascript
 [
     {
-        "+93",
-        "Afghanistan",
-        "+4.5"
+       "dialcode" :  "+263",
+        "country": "Zimbabwe",
+       "timezone" :  "+2"
     },
     {
-        "+355",
-        "Albania",
-        "+1"
-    },
-    {
-        "+213",
-        "Algeria",
-        "+1"
-    },
-    {
-        "+685",
-        "American Samoa",
-        "-11"
-    },
-    {
-        "+376",
-        "Andorra",
-        "+1"
+        "dialcode" : "+91",
+        "country": "India",
+        "timezone" :"+5.5"
     },
   ...
 ]
