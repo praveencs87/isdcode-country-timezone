@@ -1,7 +1,5 @@
-var fs = require('require');
-
 function compare (dialcodes:any, arg:string) {
-    return  dialcodes[0] == arg
+    return  dialcodes['dialcode'] == arg
 };
 
 export function getCountries() {
@@ -14,7 +12,7 @@ export function getTimezone (dialCode:any):any {
 
   for (let i = 0; i < dialcodes.length; i++) {
       if (compare(dialcodes[i], dialCode)) {
-          return dialcodes[i][2];
+          return dialcodes[i]['timezone'];
       }
   }
 
