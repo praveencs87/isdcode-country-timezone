@@ -1,5 +1,9 @@
 ## Usage
 
+```javascript
+ const notifier = require('isdcode-country-timezone');
+ ```
+
 ### `getCountries()`
 
 This function will return the array of all the countries with ISD/dial code and Time zone.
