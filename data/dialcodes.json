@@ -3,11 +3,11 @@
     {
        "dialcode" :  "+263",
         "country": "Zimbabwe",
-       "timezone" :  "+2"
+       "timezone" :  "Africa/Harare"
     },
     {
         "dialcode" : "+91",
         "country": "India",
-        "timezone" :"+5.5"
+        "timezone" :"asia/kolkata"
     }
 ]

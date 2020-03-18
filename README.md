@@ -1,7 +1,7 @@
 ## Usage
 
 ```javascript
- const notifier = require('isdcode-country-timezone');
+ const timezone = require('isdcode-country-timezone');
  ```
 
 ### `getCountries()`
