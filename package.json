@@ -29,7 +29,7 @@
   "homepage": "http://github.com/praveencs87/isdcode-country-timezone#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "typescript": "^3.5.3"
   },
   "dependencies": {
